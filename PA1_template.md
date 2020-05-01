@@ -2,7 +2,8 @@
 title: "Reproducible Research: Peer Assessment 1"
 author: "Roan Indra"
 output: 
-  html_document:
+  html_document: 
+    fig_caption: yes
     keep_md: yes
 ---
 
