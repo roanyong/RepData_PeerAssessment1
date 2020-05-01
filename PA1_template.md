@@ -46,7 +46,7 @@ total.steps <- activity %>% group_by(date) %>% summarise(steps = sum(steps, na.r
 total.steps %>% ggplot(aes(x = steps)) + geom_histogram(binwidth=1000) + ggtitle("Total Number of Steps Taken Each Day") 
 ```
 
-![plot of chunk total number of steps-1](PA1_template_files/figure-html/total number of steps-1.png)
+![](PA1_template_files/figure-html/total%20number%20of%20steps-1.png)
 
 ```r
 #mean
@@ -78,7 +78,7 @@ averages %>% ggplot(aes(x=interval, y=avg)) +
     ylab("average number of steps taken")
 ```
 
-![](PA1_template_files/figure-html/daily average-1.png)<!-- -->
+![](PA1_template_files/figure-html/daily%20average-1.png)<!-- -->
 
 ```r
 #maximum number of steps
@@ -210,7 +210,7 @@ total.steps2 <- filled.data %>% group_by(date) %>% summarise(steps = sum(steps, 
 total.steps2 %>% ggplot(aes(x = steps)) + geom_histogram(binwidth=1000) + ggtitle("Total Number of Steps Taken Each Day") 
 ```
 
-![](PA1_template_files/figure-html/histogram, mean, and median of the new dataset-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram,%20mean,%20and%20median%20of%20the%20new%20dataset-1.png)<!-- -->
 
 ```r
 #mean
@@ -266,5 +266,5 @@ facet_grid(weekend ~.) + xlab("Interval") + ylab("Mean of Steps") +
     ggtitle("Comparison of Average Number of Steps in Each Interval")
 ```
 
-![](PA1_template_files/figure-html/difference weekdays and weekends-1.png)<!-- -->
+![](PA1_template_files/figure-html/difference%20weekdays%20and%20weekends-1.png)<!-- -->
 
