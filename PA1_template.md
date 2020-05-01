@@ -46,7 +46,7 @@ total.steps <- activity %>% group_by(date) %>% summarise(steps = sum(steps, na.r
 total.steps %>% ggplot(aes(x = steps)) + geom_histogram(binwidth=1000) + ggtitle("Total Number of Steps Taken Each Day") 
 ```
 
-![](PA1_template_files/figure-html/total number of steps-1.png)<!-- -->
+![plot of chunk total number of steps-1](PA1_template_files/figure-html/total number of steps-1.png)
 
 ```r
 #mean
